@@ -45,7 +45,7 @@ class TestPasswordManager(unittest.TestCase):
     def test_login_to_system(self, username, password):
         passwordManager = PasswordManager()
         self.assertEqual(passwordManager.login_to_system(username, password), "True")
-        self.assertNotEqual(passwordManager.login_to_system(username, password), "True")
+        self.assertNotEqual(passwordManager.login_to_system(username, password), "False")
 
     def test_logged_in_username(self):
         passwordManager = PasswordManager()
@@ -56,5 +56,5 @@ class TestPasswordManager(unittest.TestCase):
     def test_request_user_consent(self, user_consented):
         passwordManager = PasswordManager()
         self.assertEqual(passwordManager.retrive_user_consent(user_consented), "True")
-        self.assertNotEqual(passwordManager.retrive_user_consent(user_consented), "True")
+        self.assertNotEqual(passwordManager.retrive_user_consent(user_consented), "False")
 
