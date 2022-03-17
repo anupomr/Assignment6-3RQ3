@@ -1,6 +1,3 @@
-'''
-Name : Anupom Roy
-'''
 
 class PasswordManager:
     # Part A
